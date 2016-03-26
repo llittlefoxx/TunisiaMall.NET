@@ -16,7 +16,6 @@ namespace TunisaMall.data.Models
         public Nullable<System.DateTime> startDate { get; set; }
         public bool state { get; set; }
         public double value { get; set; }
-        public int testtest { get; set; }
         public virtual ICollection<product> products { get; set; }
     }
 }
