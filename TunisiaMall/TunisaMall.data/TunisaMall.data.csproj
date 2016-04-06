@@ -68,13 +68,9 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\201603261734154_FirstMigration.cs" />
-    <Compile Include="Migrations\201603261734154_FirstMigration.Designer.cs">
-      <DependentUpon>201603261734154_FirstMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603261801172_Addtest.cs" />
-    <Compile Include="Migrations\201603261801172_Addtest.Designer.cs">
-      <DependentUpon>201603261801172_Addtest.cs</DependentUpon>
+    <Compile Include="Migrations\201604061049548_heritage.cs" />
+    <Compile Include="Migrations\201604061049548_heritage.Designer.cs">
+      <DependentUpon>201604061049548_heritage.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Mapping\anonimousratingMap.cs" />
@@ -113,14 +109,32 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Content\bootstrap-theme.css.map" />
+    <None Include="Content\bootstrap-theme.min.css.map" />
+    <None Include="Content\bootstrap.css.map" />
+    <None Include="Content\bootstrap.min.css.map" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.svg" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="packages.config" />
+    <None Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201603261734154_FirstMigration.resx">
-      <DependentUpon>201603261734154_FirstMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603261801172_Addtest.resx">
-      <DependentUpon>201603261801172_Addtest.cs</DependentUpon>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604061049548_heritage.resx">
+      <DependentUpon>201604061049548_heritage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,13 +7,13 @@ namespace TunisaMall.data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class FirstMigration : IMigrationMetadata
+    public sealed partial class heritage : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(FirstMigration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(heritage));
         
         string IMigrationMetadata.Id
         {
-            get { return "201603261734154_FirstMigration"; }
+            get { return "201604061049548_heritage"; }
         }
         
         string IMigrationMetadata.Source

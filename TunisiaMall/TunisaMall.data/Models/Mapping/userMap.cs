@@ -45,11 +45,7 @@ namespace TunisaMall.data.Models.Mapping
             this.Property(t => t.pictureUrl)
                 .HasMaxLength(255);
 
-            this.Property(t => t.facturationAddr)
-                .HasMaxLength(255);
-
-            this.Property(t => t.shipementAddr)
-                .HasMaxLength(255);
+          
 
             // Table & Column Mappings
             this.ToTable("user", "pidevtunisiamall");
@@ -67,9 +63,18 @@ namespace TunisaMall.data.Models.Mapping
             this.Property(t => t.password).HasColumnName("password");
             this.Property(t => t.phone).HasColumnName("phone");
             this.Property(t => t.pictureUrl).HasColumnName("pictureUrl");
-            this.Property(t => t.dateActivation).HasColumnName("dateActivation");
-            this.Property(t => t.facturationAddr).HasColumnName("facturationAddr");
-            this.Property(t => t.shipementAddr).HasColumnName("shipementAddr");
+
+            //heritage
+
+            Map<Customer>(c =>
+            {
+                c.Requires("USER_TYPE").HasValue("customer");
+            });
+            Map<ShopOwner>(c =>
+            {
+                c.Requires("USER_TYPE").HasValue("shopOwner");
+            });
+
         }
     }
 }

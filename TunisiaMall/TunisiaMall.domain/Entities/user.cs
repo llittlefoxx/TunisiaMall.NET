@@ -34,9 +34,8 @@ namespace TunisaMall.data.Models
         public string password { get; set; }
         public string phone { get; set; }
         public string pictureUrl { get; set; }
-        public Nullable<System.DateTime> dateActivation { get; set; }
-        public string facturationAddr { get; set; }
-        public string shipementAddr { get; set; }
+        
+       
         public virtual ICollection<comment> comments { get; set; }
         public virtual ICollection<complaint> complaints { get; set; }
         public virtual ICollection<friendship> friendships { get; set; }

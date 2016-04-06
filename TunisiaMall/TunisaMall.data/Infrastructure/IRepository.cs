@@ -19,4 +19,5 @@ namespace  Data.Interfaces
         IEnumerable<T> GetAll();
         IEnumerable<T> GetMany(Expression<Func<T, bool>> where);
     }
+
 }
