@@ -1,4 +1,4 @@
-﻿@model IEnumerable<TunisaMall.data.Models.promotion>
+﻿@model IEnumerable<TunisaMall.domain.Entities.promotion>
 
 @{
     ViewBag.Title = "Index";
@@ -11,9 +11,6 @@
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.idPromotion)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.endDate)
         </th>
@@ -34,9 +31,6 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.idPromotion)
-        </td>
         <td>
             @Html.DisplayFor(modelItem => item.endDate)
         </td>

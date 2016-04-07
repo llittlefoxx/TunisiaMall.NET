@@ -1,4 +1,4 @@
-﻿@model IEnumerable<TunisaMall.data.Models.category>
+﻿@model IEnumerable<TunisaMall.domain.Entities.category>
 
 @{
     ViewBag.Title = "Index";
@@ -11,9 +11,7 @@
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.idCategory)
-        </th>
+
         <th>
             @Html.DisplayNameFor(model => model.description)
         </th>
@@ -25,9 +23,6 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.idCategory)
-        </td>
         <td>
             @Html.DisplayFor(modelItem => item.description)
         </td>

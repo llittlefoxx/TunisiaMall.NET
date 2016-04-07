@@ -1,13 +1,14 @@
-﻿ 
+﻿
 
-using  Data.Infrastructure;
-using  Data.Interfaces;
+using Data.Infrastructure;
+using Data.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TunisaMall.data.Models;
+using TunisaMall.domain.Entities;
 
 namespace  Data.Repositories
 {

@@ -41,7 +41,7 @@ namespace TunisiaMall.App_Start
 
             // TODO: Register your types here
             
-           container.RegisterType<ICategoryRepository, CategoryRepository>(new PerRequestLifetimeManager());
+            container.RegisterType<ICategoryRepository, CategoryRepository>(new PerRequestLifetimeManager());
             container.RegisterType<IUnitOfWork, UnitOfWork>(new PerRequestLifetimeManager());
             container.RegisterType<IPromotionRepository, PromotionRepository>(new PerRequestLifetimeManager());
             container.RegisterType<IDatabaseFactory, DatabaseFactory>(new PerRequestLifetimeManager());

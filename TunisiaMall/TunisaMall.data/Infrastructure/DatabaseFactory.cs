@@ -11,7 +11,9 @@ namespace Data.Infrastructure
 {
     public class DatabaseFactory : Disposable, IDatabaseFactory
     {
+        //champ
         private pidevtunisiamallContext dataContext;
+        //attribut (propriété full-complex)
         public pidevtunisiamallContext DataContext
         {
             get { return dataContext; }
@@ -21,6 +23,7 @@ namespace Data.Infrastructure
         {
             dataContext = new pidevtunisiamallContext();
         }
+        
         protected override void DisposeCore()
         {
             if (DataContext != null)

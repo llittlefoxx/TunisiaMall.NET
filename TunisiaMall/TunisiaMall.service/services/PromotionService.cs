@@ -5,8 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TunisaMall.data.Models;
+using TunisaMall.domain.Entities;
 
-namespace TunisiaMall.service
+namespace TunisiaMall.service.services
 {
     public class PromotionService: IPromotionService
     {
