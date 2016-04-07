@@ -205,7 +205,7 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TunisaMall.data\TunisaMall.data.csproj">
+    <ProjectReference Include="..\TunisaMall.data\TunisiaMall.data.csproj">
       <Project>{391aa053-9c51-44ff-9845-19e85da74593}</Project>
       <Name>TunisaMall.data</Name>
     </ProjectReference>
