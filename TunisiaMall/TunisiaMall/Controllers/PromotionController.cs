@@ -4,7 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TunisaMall.data.Models;
-using TunisiaMall.service;
+using TunisaMall.domain.Entities;
+using TunisiaMall.service.services;
 
 namespace TunisiaMall.Controllers
 {

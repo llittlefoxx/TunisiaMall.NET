@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity.ModelConfiguration;
+using TunisaMall.domain.Entities;
 
 namespace TunisaMall.data.Models.Mapping
 {

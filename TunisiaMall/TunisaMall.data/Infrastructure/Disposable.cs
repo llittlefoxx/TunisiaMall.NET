@@ -8,7 +8,8 @@ namespace  Data.Infrastructure
 {
     public class Disposable : IDisposable
     {
-        // Track whether Dispose has been called.         
+        // Track whether Dispose has been called.
+        //disposable = non managée = appel a la classe Dispo         
         private bool isDisposed;
         // Use C# destructor syntax for finalization code.         
         // This destructor will run only if the Dispose method         

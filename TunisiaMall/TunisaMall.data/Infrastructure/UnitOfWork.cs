@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TunisaMall.data.Models;
+using TunisaMall.data.Repositories;
 
 namespace  Data.Infrastructure
 {
@@ -39,15 +40,22 @@ namespace  Data.Infrastructure
             get { return promotionRepository = new PromotionRepository(dbFactory); }
         }
 
+
+
         private ICategoryRepository categoryRepository;
         public ICategoryRepository CategoryRepository
         {
             get { return categoryRepository = new CategoryRepository(dbFactory); ; }
         }
 
-         
+        private IProductRepository productRepository;
+        public IProductRepository ProductRepository
+        {
+            get { return productRepository = new ProductRepository(dbFactory); ; }
+        }
 
-        
+
+
         public void Dispose()
         {
             DataContext.Dispose();
