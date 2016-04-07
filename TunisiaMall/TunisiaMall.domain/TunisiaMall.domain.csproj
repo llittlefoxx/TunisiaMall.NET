@@ -49,32 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="anonimousrating.cs" />
-    <Compile Include="category.cs" />
-    <Compile Include="comment.cs" />
-    <Compile Include="complaint.cs" />
-    <Compile Include="events.cs" />
-    <Compile Include="friendship.cs" />
-    <Compile Include="gestbookentry.cs" />
-    <Compile Include="image.cs" />
-    <Compile Include="message.cs" />
-    <Compile Include="mvtstock.cs" />
-    <Compile Include="order.cs" />
-    <Compile Include="orderline.cs" />
-    <Compile Include="post.cs" />
-    <Compile Include="product.cs" />
-    <Compile Include="promotion.cs" />
-    <Compile Include="promotionsuggest.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="shoprequest.cs" />
-    <Compile Include="store.cs" />
-    <Compile Include="subcategory.cs" />
-    <Compile Include="subscription.cs" />
-    <Compile Include="user.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

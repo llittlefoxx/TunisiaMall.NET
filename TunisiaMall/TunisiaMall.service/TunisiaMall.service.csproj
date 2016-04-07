@@ -49,23 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CategoryService.cs" />
-    <Compile Include="PromotionService.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TunisaMall.data\TunisaMall.data.csproj">
-      <Project>{391aa053-9c51-44ff-9845-19e85da74593}</Project>
-      <Name>TunisaMall.data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TunisiaMall.domain\TunisiaMall.domain.csproj">
-      <Project>{2ded0e38-e3a8-46d3-8bda-e638ec94fbc9}</Project>
-      <Name>TunisiaMall.domain</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

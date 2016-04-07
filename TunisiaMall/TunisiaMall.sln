@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TunisiaMall", "TunisiaMall\TunisiaMall.csproj", "{D2B03424-F7BC-4EB7-BDE8-A4696CAB6D54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TunisaMall.data", "TunisaMall.data\TunisaMall.data.csproj", "{391AA053-9C51-44FF-9845-19E85DA74593}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TunisiaMall.data", "TunisaMall.data\TunisiaMall.data.csproj", "{391AA053-9C51-44FF-9845-19E85DA74593}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TunisiaMall.domain", "TunisiaMall.domain\TunisiaMall.domain.csproj", "{2DED0E38-E3A8-46D3-8BDA-E638EC94FBC9}"
 EndProject
