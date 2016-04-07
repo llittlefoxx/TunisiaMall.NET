@@ -67,7 +67,7 @@ namespace TunisaMall.data.Models.Mapping
 
             //heritage
 
-            Map<Customer>(c =>
+            Map<customer>(c =>
             {
                 c.Requires("USER_TYPE").HasValue("customer");
             });
