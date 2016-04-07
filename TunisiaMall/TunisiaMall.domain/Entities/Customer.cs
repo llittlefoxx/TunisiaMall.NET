@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TunisaMall.domain.Entities;
 
-namespace TunisiaMall.domain.Entities
+namespace TunisiaMall.Domain.Entities
 {
-    public class customer : user
+    public class Customer: user
     {
+
         public string facturationAddr { get; set; }
         public string shipementAddr { get; set; }
     }
 }
-

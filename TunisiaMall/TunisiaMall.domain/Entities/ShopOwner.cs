@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TunisiaMall.Domain.Entities;
 
-namespace TunisaMall.data.Models
+namespace TunisiaMall.Domain.Entities
 {
-   public class ShopOwner:user
-
+   public class shopowner: user
     {
         public Nullable<System.DateTime> dateActivation { get; set; }
     }
