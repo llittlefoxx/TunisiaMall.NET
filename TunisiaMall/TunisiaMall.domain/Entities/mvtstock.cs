@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 
-namespace TunisaMall.domain.Entities
-{ 
+namespace TunisiaMall.Domain.Entities
+{
     public partial class mvtstock
     {
         public int idMvt { get; set; }

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2DED0E38-E3A8-46D3-8BDA-E638EC94FBC9}</ProjectGuid>
+    <ProjectGuid>{23A4F834-5E78-4977-928C-5D17CCCC3D15}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TunisiaMall.domain</RootNamespace>
