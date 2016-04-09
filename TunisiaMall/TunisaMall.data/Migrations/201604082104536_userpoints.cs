@@ -3,16 +3,16 @@ namespace TunisaMall.data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Addtest : DbMigration
+    public partial class userpoints : DbMigration
     {
         public override void Up()
         {
-            AddColumn("promotion", "test", c => c.String(unicode: false));
+            AddColumn("user", "points", c => c.Int());
         }
         
         public override void Down()
         {
-            DropColumn("promotion", "test");
+            DropColumn("user", "points");
         }
     }
 }

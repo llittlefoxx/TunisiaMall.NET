@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using TunisaMall.data.Models;
-using TunisaMall.domain.Entities;
+using TunisiaMall.domain.Entities;
 
 namespace  Data.Repositories
 {

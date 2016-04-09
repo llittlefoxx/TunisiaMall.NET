@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace TunisaMall.domain.Entities
+namespace TunisiaMall.domain.Entities
 {
     public partial class gestbookentry
     {

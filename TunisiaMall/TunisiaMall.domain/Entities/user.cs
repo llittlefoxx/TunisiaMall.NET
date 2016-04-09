@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace TunisaMall.domain.Entities
+namespace TunisiaMall.domain.Entities
 {
     public partial class user
     {
@@ -20,7 +20,6 @@ namespace TunisaMall.domain.Entities
             this.subscriptions = new List<subscription>();
         }
 
-        public string USER_TYPE { get; set; }
         public int idUser { get; set; }
         public string address { get; set; }
         public Nullable<bool> baned { get; set; }
@@ -34,9 +33,6 @@ namespace TunisaMall.domain.Entities
         public string password { get; set; }
         public string phone { get; set; }
         public string pictureUrl { get; set; }
-        public Nullable<System.DateTime> dateActivation { get; set; }
-        public string facturationAddr { get; set; }
-        public string shipementAddr { get; set; }
         public virtual ICollection<comment> comments { get; set; }
         public virtual ICollection<complaint> complaints { get; set; }
         public virtual ICollection<friendship> friendships { get; set; }

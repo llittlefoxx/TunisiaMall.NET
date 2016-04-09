@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TunisaMall.data.Models;
-using TunisaMall.domain.Entities;
+using TunisiaMall.domain.Entities;
 
 namespace TunisaMall.data.Repositories
 {
@@ -17,9 +17,13 @@ namespace TunisaMall.data.Repositories
         {
 
         }
+        public void test()
+        {
+
+        }
     }
     public interface IProductRepository: IRepository<product>
     {
-
+        void test();
     }
 }

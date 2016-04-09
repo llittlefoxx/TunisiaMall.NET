@@ -1,7 +1,7 @@
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using TunisaMall.data.Models.Mapping;
-using TunisaMall.domain.Entities;
+using TunisiaMall.domain.Entities;
 
 namespace TunisaMall.data.Models
 {

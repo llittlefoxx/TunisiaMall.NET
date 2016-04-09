@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity.ModelConfiguration;
-using TunisaMall.domain.Entities;
+using TunisiaMall.domain.Entities;
 
 namespace TunisaMall.data.Models.Mapping
 {
@@ -11,10 +11,6 @@ namespace TunisaMall.data.Models.Mapping
             // Primary Key
             this.HasKey(t => t.idUser);
 
-            // Properties
-            this.Property(t => t.USER_TYPE)
-                .IsRequired()
-                .HasMaxLength(31);
 
             this.Property(t => t.address)
                 .HasMaxLength(255);
@@ -46,15 +42,9 @@ namespace TunisaMall.data.Models.Mapping
             this.Property(t => t.pictureUrl)
                 .HasMaxLength(255);
 
-            this.Property(t => t.facturationAddr)
-                .HasMaxLength(255);
-
-            this.Property(t => t.shipementAddr)
-                .HasMaxLength(255);
 
             // Table & Column Mappings
             this.ToTable("user", "pidevtunisiamall");
-            this.Property(t => t.USER_TYPE).HasColumnName("USER_TYPE");
             this.Property(t => t.idUser).HasColumnName("idUser");
             this.Property(t => t.address).HasColumnName("address");
             this.Property(t => t.baned).HasColumnName("baned");
@@ -68,9 +58,16 @@ namespace TunisaMall.data.Models.Mapping
             this.Property(t => t.password).HasColumnName("password");
             this.Property(t => t.phone).HasColumnName("phone");
             this.Property(t => t.pictureUrl).HasColumnName("pictureUrl");
-            this.Property(t => t.dateActivation).HasColumnName("dateActivation");
-            this.Property(t => t.facturationAddr).HasColumnName("facturationAddr");
-            this.Property(t => t.shipementAddr).HasColumnName("shipementAddr");
+
+            //inheritence
+            Map<customer>(c =>
+            {
+                c.Requires("USER_TYPE").HasValue("customer");
+            });
+            Map<shopOwner>(c =>
+            {
+                c.Requires("USER_TYPE").HasValue("shopOwner");
+            });
         }
     }
 }
