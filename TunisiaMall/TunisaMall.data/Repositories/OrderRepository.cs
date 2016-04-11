@@ -9,18 +9,18 @@ using TunisiaMall.domain.Entities;
 
 namespace TunisaMall.data.Repositories
 {
-    public class PointsRepository : RepositoryBase<customer>,IPointsRepepository
-    {
-        public PointsRepository(IDatabaseFactory dbFactory)
-            : base(dbFactory)
-        {
-            
-        }
-
-      
-    }
-    public interface IPointsRepepository : IRepository<customer>
+    public class OrderRepository: RepositoryBase<order>, IOrderRepository
     {
        
+
+        public OrderRepository(IDatabaseFactory dbFactory) : base(dbFactory)
+        {
+
+        }
+
+    }
+    public interface IOrderRepository:IRepository<order>
+    {
+
     }
 }

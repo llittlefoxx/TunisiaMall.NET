@@ -3,15 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TunisiaMall.domain.Entities;
+using TunisiaMall.service.services;
 
 namespace TunisiaMall.Controllers
 {
     public class PointsController : Controller
     {
         // GET: Points
-        public ActionResult Index()
+        public void Index()
         {
-            return View();
+            customer u = new customer { idUser = 1 };
+            // PointsService ps = new PointsService();
+            // test the addPointsToCustomer method //  OK
+            //ps.addPointsToCustomer(u, 3);
+            // test the removePointsFromCustomer method //  OK
+            //ps.removePointsFromCustomer(u, 6);
+            //return View();
+            // test  method //  OK
+            //ps.getBestClient(2);
+            order o = new order { idUser = u.idUser, orderStatus = "pending", cardHolder = "dali" };
+            OrderService os = new OrderService();
+            os.createOrder(o);
+            Console.Beep();
+
         }
 
         // GET: Points/Details/5

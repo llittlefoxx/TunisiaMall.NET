@@ -27,11 +27,16 @@ namespace TunisiaMall.service.services
             return utk.ProductRepository.GetAll();
         }
 
+        public product getProdByID(int id)
+        {
+            return utk.ProductRepository.GetById(id);
+        }
     }
     public interface IProductService
     {
          void add();
         IEnumerable<product> getAll();
+        product getProdByID(int id);
 
     }
 }

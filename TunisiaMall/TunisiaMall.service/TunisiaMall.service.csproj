@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="services\CategoryService.cs" />
+    <Compile Include="services\OrderLineService.cs" />
+    <Compile Include="services\OrderService.cs" />
     <Compile Include="services\PointsService.cs" />
     <Compile Include="services\ProductService.cs" />
     <Compile Include="services\PromotionService.cs" />

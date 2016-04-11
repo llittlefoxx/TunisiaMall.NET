@@ -54,13 +54,25 @@ namespace  Data.Infrastructure
             get { return productRepository = new ProductRepository(dbFactory); ; }
         }
 
+
         private IPointsRepepository pointsRepository;
-        public IPointsRepepository PointstRepository
+
+       public IPointsRepepository PointsRepository
         {
-            get { return pointsRepository = new PointsRepository(dbFactory); ; }
+            get { return pointsRepository = new PointsRepository(dbFactory);  }
         }
 
+        private IOrderRepository orderRepository;
+        public IOrderRepository OrderRepository
+        {
+            get { return orderRepository = new OrderRepository(dbFactory);  }
+        }
 
+        private IOrderLineRepository orderLineRepository;
+        public IOrderLineRepository OrderLineRepository
+        {
+            get { return orderLineRepository = new OrderLineRepository(dbFactory); }
+        }
 
         public void Dispose()
         {
